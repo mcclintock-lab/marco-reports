@@ -1,0 +1,26 @@
+<div class="reportSection">
+  <h4>Size</h4>
+  <p>The selected sketch is <b>{{size}}</b> square miles.
+</div>
+
+<div class="reportSection tableContainer">
+    <h4>Habitats</h4>
+    <p>The following habitats can be found within the selected sketch:</p>
+    <table style="margin-left:5px;width:97%" data-paging="10">
+      <thead>
+        <tr>
+          <th style="width:250px;">Habitat Name</th>
+          <th style="width:120px;">Area (sq. km)</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#habitats}}
+          <tr>
+            <td>{{Name}}</td>
+            <td>{{AREA}}</td>
+          </tr>
+        {{/habitats}}
+      </tbody>
+    </table>
+
+ </div>
